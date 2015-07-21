@@ -12,7 +12,7 @@
                 {
                     Response.Write(@"
                         <li><a href='Registration.aspx'>Edit/Update Account</a></li>
-                        <li><a href='Package.aspx'>View Package/Booking Details</a></li>
+                        <li><a href='TravelProducts.aspx'>View Package/Booking Details</a></li>
                         <li><a href='Logout.aspx'>Logout</a></li>
                     ");
                 }
