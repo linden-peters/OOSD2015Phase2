@@ -4,12 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyPlaceHolder" Runat="Server">
     <div>
-        <ul class="navbar-nav">
-            <li>
-                <a href="Home.aspx">Home</a>
-                <a href="Registration.aspx">Update Account Details</a>
-                <a href="Package.aspx">View Package and Booking Details</a>
-            </li>
+        <h1>Team 6 Product Demo</h1>
+        <ul class="nav navbar-nav">
+            <li><a href="Setup.aspx">Init DB</a></li>
+            <li><a href="Home.aspx">Start Demo</a></li>
         </ul>
     </div>
 </asp:Content>

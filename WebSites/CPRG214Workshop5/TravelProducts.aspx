@@ -1,12 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="TravelProducts.aspx.cs" Inherits="TravelProducts" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="TravelProducts.aspx.cs" Inherits="_Default" %>
 <%-- * Author : Sunny Xie
  * Date: July 20, 2015
  * Usage: user purchased packages and products file c#.--%>
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Your Packages,</title>
+<asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" Runat="Server">
     <link href="Styles/travelProducts.css" rel="stylesheet" />
     <style type="text/css">
         .auto-style1 {
@@ -17,8 +13,8 @@
             color: #FF6666;
         }
     </style>
-</head>
-<body>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="bodyPlaceHolder" Runat="Server">
     <form id="form1" runat="server">
     <div>
     
@@ -31,11 +27,10 @@
         </asp:TreeView>
     
     </div>
-        <p>
-            &nbsp;</p>
-        <asp:Label ID="lblInfo" runat="server" BackColor="#9999FF" Font-Italic="True" Font-Size="X-Small"></asp:Label>
+        <br />
+        <asp:Label ID="lblInfo" runat="server" BackColor="#9999FF" Font-Italic="True" Font-Size="Medium"></asp:Label>
+        <br />
         <br />
         <asp:Button ID="btnHome" runat="server" OnClick="btnHome_Click" Text="Go Home" />
     </form>
-</body>
-</html>
+</asp:Content>

@@ -154,7 +154,8 @@
             </td>
             <td class="auto-style5">
                 <asp:TextBox ID="txtCustEmail" runat="server" MaxLength="50"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegExCustEmail" runat="server" ControlToValidate="txtCustEmail" Display="Dynamic" ErrorMessage="Email is not in valid format." CssClass="validator" ValidationExpression="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"></asp:RegularExpressionValidator>
+                <%-- Strict version: "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" --%>
+                <asp:RegularExpressionValidator ID="RegExCustEmail" runat="server" ControlToValidate="txtCustEmail" Display="Dynamic" ErrorMessage="Email is not in valid format." CssClass="validator" ValidationExpression="^.+@.+$"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
