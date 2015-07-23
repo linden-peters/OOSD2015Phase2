@@ -58,17 +58,24 @@ namespace CMP248WorkShop2_Team6
 
             curRow = 0;
             productDataGridView.CurrentCell = productDataGridView.Rows[0].Cells[0];
-            List<Supplier> suppliers = SupplierDB.GetSuppliersByProduct(Convert.ToInt32(productDataGridView.Rows[curRow].Cells[1].Value));
-            //supplierDataGridView.DataSource = suppliers;
-            foreach (Supplier s in suppliers)
+            try
             {
-                //string[] row1 = new string[] { id.ToString(), name };
-                int rowid = supplierDataGridView.Rows.Add(s.SupplierId.ToString(), s.SupName);
-                if (rowid % 2 == 1)
+                List<Supplier> suppliers = SupplierDB.GetSuppliersByProduct(Convert.ToInt32(productDataGridView.Rows[curRow].Cells[1].Value));
+                //supplierDataGridView.DataSource = suppliers;
+                foreach (Supplier s in suppliers)
                 {
-                    // set background color for specific rows
-                    supplierDataGridView.Rows[rowid].DefaultCellStyle.BackColor = Color.LightBlue;
+                    //string[] row1 = new string[] { id.ToString(), name };
+                    int rowid = supplierDataGridView.Rows.Add(s.SupplierId.ToString(), s.SupName);
+                    if (rowid % 2 == 1)
+                    {
+                        // set background color for specific rows
+                        supplierDataGridView.Rows[rowid].DefaultCellStyle.BackColor = Color.LightBlue;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 

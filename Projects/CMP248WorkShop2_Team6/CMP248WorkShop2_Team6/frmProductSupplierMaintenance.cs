@@ -195,6 +195,7 @@ namespace CMP248WorkShop2_Team6
                 }
                 else
                 {
+                    lblProductSupplierInfo.Text = "";
                     foreach (ProductSupplier ps in productSupplier)
                     {
                         productSupplierDataGridView.Rows.Clear();
@@ -220,6 +221,7 @@ namespace CMP248WorkShop2_Team6
                 }
                 else
                 {
+                    lblProductSupplierInfo.Text = "";
                     foreach (ProductSupplier ps in productSupplier)
                     {
                         productSupplierDataGridView.Rows.Clear();   //clear rows in data grid view

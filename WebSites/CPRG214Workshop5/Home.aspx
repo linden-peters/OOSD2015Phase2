@@ -22,6 +22,7 @@
                 }
             %>
         </ul>
+        <img src="Images/Travel.jpg" width="512" />
     </div>
 </asp:Content>
 

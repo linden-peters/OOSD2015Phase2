@@ -155,11 +155,6 @@ namespace CMP248WorkShop2_Team6
                 Validator.IsPresent(txtPkgAgencyCommission) &&
                 Validator.IsPresent(txtPkgBasePrice))
             {
-                DateTime pkgStartDate = (DateTime)dtpPkgStartDate.Value;
-                DateTime pkgEndDate = (DateTime)dtpPkgEndDate.Value;
-                decimal pkgAgencyCommission = Convert.ToDecimal(txtPkgAgencyCommission.Text);
-                decimal pkgBasePrice = Convert.ToDecimal(txtPkgBasePrice.Text);
-
                 return
                     //Validate packageName
                     Validator.IsPresent(txtPkgName) &&
@@ -169,18 +164,18 @@ namespace CMP248WorkShop2_Team6
 
                     //Validate Package Start and End Date
                     //Validator.IsPresent(dtpPkgStartDate) && Validator.IsPresent(dtpPkgEndDate) &&
-                    Validator.DateCheck(pkgStartDate, pkgEndDate) &&
+                    Validator.DateCheck((DateTime)dtpPkgStartDate.Value, (DateTime)dtpPkgEndDate.Value) &&
 
                     //Validate Package base price
                     //Validator.IsPresent(txtPkgBasePrice) &&
-                    Validator.IsDecimal(txtPkgAgencyCommission) &&
+                    Validator.IsDecimal(txtPkgBasePrice) &&
                     Validator.IsPositive(txtPkgBasePrice) &&
 
                     //Validate Package Agency Commission
                     //Validator.IsPresent(txtPkgAgencyCommission) &&
                     Validator.IsDecimal(txtPkgAgencyCommission) &&
                     Validator.IsPositive(txtPkgAgencyCommission) &&
-                    Validator.ValidateCommission(txtPkgAgencyCommission, "Package Agency Commission", pkgAgencyCommission, pkgBasePrice);
+                    Validator.ValidateCommission(txtPkgAgencyCommission, "Package Agency Commission", Convert.ToDecimal(txtPkgAgencyCommission.Text), Convert.ToDecimal(txtPkgBasePrice.Text));
             }
             else
             {

@@ -51,7 +51,7 @@
                 <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
             </td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtPassword" runat="server" CausesValidation="True" MaxLength="25"></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" CausesValidation="True" MaxLength="25" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="ReqCustPassword" runat="server" ControlToValidate="txtPassword" CssClass="validator" Display="Dynamic" ErrorMessage="Password is required"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -60,7 +60,7 @@
                 <asp:Label ID="lblConfirmPassword" runat="server" Text="Confirm Password:"></asp:Label>
             </td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtConfirmPassword" runat="server" CausesValidation="True" MaxLength="25"></asp:TextBox>
+                <asp:TextBox ID="txtConfirmPassword" runat="server" CausesValidation="True" MaxLength="25" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="ReqCustConfirmPwd" runat="server" ControlToValidate="txtConfirmPassword" CssClass="validator" Display="Dynamic" ErrorMessage="Confirm Password is required."></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="CompConfirmPwd" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtConfirmPassword" CssClass="validator" Display="Dynamic" ErrorMessage="Password and ConfirmPassword should be same"></asp:CompareValidator>
             </td>

@@ -5,7 +5,6 @@ c:\users\691539\documents\visual studio 2012\Projects\CMP248WorkShop2_Team6\Trav
 c:\users\691539\documents\visual studio 2012\Projects\CMP248WorkShop2_Team6\TravelData\obj\Debug\TravelData.pdb
 C:\Users\504138\Documents\Visual Studio 2012\Projects\CMP248WorkShop2_Team6\TravelData\bin\Debug\TravelData.dll
 C:\Users\504138\Documents\Visual Studio 2012\Projects\CMP248WorkShop2_Team6\TravelData\bin\Debug\TravelData.pdb
-C:\Users\504138\Documents\Visual Studio 2012\Projects\CMP248WorkShop2_Team6\TravelData\obj\Debug\TravelData.csprojResolveAssemblyReference.cache
 C:\Users\504138\Documents\Visual Studio 2012\Projects\CMP248WorkShop2_Team6\TravelData\obj\Debug\TravelData.dll
 C:\Users\504138\Documents\Visual Studio 2012\Projects\CMP248WorkShop2_Team6\TravelData\obj\Debug\TravelData.pdb
 C:\Users\691539\Documents\Visual Studio 2012\Projects\CMP248WorkShop2_Team6_FINAL\CMP248WorkShop2_Team6\TravelData\bin\Debug\TravelData.dll
