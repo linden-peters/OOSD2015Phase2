@@ -2,8 +2,7 @@
  * Author : Sunny Xie
  * Date: July 20, 2015
  * Usage: user purchased packages and products file c#.
- * 
- * */
+ */
 using System;
 using System.Collections.Generic;
 using System.Data;

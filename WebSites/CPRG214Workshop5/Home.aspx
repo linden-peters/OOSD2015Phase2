@@ -1,4 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="_Default" %>
+﻿<%--
+    Home.aspx - Home Page
+    Author: Linden, Geetha
+    Written: 2015/07/20
+--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" Runat="Server">
     <link href="Styles/Home.css" rel="stylesheet" />
@@ -18,11 +23,14 @@
                 }
                 else
                 {
-                    Response.Write(@"<li><a href='Login.aspx'>Login</a></li>");
+                    Response.Write(@"
+                        <li><a href='Login.aspx'>Login</a></li>
+                        <li><a href='Registration.aspx'>Register</a></li>
+                    ");
                 }
             %>
         </ul>
-        <img src="Images/Travel.jpg" width="512" />
+        <a href="Images/Travel_F.jpg"><img src="Images/Travel_S.jpg" /></a>
     </div>
 </asp:Content>
 

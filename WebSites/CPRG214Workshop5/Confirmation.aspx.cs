@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Confirmation.aspx - Registration Confirmation
+ * Author: Geetha, Linden
+ * Written: 2015/07/20
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

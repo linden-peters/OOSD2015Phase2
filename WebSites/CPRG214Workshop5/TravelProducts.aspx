@@ -1,7 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="TravelProducts.aspx.cs" Inherits="_Default" %>
-<%-- * Author : Sunny Xie
+﻿<%--
+ * Author : Sunny Xie
  * Date: July 20, 2015
- * Usage: user purchased packages and products file c#.--%>
+ * Usage: user purchased packages and products file c#.
+--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="TravelProducts.aspx.cs" Inherits="_Default" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" Runat="Server">
     <link href="Styles/travelProducts.css" rel="stylesheet" />
     <style type="text/css">

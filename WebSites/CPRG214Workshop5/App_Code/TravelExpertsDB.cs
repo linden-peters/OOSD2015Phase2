@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * TravelExpertsDB.cs - Default Connection Provider
+ * Author: Linden
+ * Written: 2015/07/20
+ */
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;

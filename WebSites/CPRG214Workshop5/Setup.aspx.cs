@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Setup.aspx - DB Initializer
+ * Author: Linden
+ * Written: 2015/07/27
+ */
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
@@ -19,14 +24,14 @@ public partial class _Default : System.Web.UI.Page
                 lblOutput.Text += "Successfully opened seedfile.<br />";
                 using (SqlConnection dbConn = TravelExpertsDB.GetInitConn())
                 {
+                    string s = null;
                     dbConn.Open();
                     while (!fsReader.EndOfStream)
                     {
                         StringBuilder qryParsed = new StringBuilder();
                         while (!fsReader.EndOfStream)
                         {
-                            string s = fsReader.ReadLine();
-                            if (s != null && s.ToUpper().Trim().Equals("GO"))
+                            if ((s = fsReader.ReadLine()) != null && s.ToUpper().Trim().Equals("GO"))
                                 break;
                             qryParsed.AppendLine(s);
                         }

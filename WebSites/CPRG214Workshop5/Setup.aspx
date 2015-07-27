@@ -1,4 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Setup.aspx.cs" Inherits="_Default" %>
+﻿<%--
+    Setup.aspx - DB Initializer
+    Author: Linden
+    Written: 2015/07/27
+--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Setup.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" Runat="Server">
 </asp:Content>

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Registration.aspx - Customer Registration Form and Handler
+ * Author: Geetha, Linden
+ * Written: 2015/07/20
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;

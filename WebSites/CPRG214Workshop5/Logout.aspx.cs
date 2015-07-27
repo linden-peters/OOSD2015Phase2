@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Logout.aspx - Logout Page, automatically destroys session
+ * Author: Linden
+ * Written: 2015/07/20
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
