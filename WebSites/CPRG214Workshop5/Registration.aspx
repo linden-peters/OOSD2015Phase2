@@ -122,7 +122,7 @@
             <td class="auto-style5">
                 <asp:TextBox ID="txtCustPostal" runat="server" MaxLength="7"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="ReqCustPostal" runat="server" ControlToValidate="txtCustPostal" CssClass="validator" Display="Dynamic" ErrorMessage="Postal code is required"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegCustPostal" runat="server" ErrorMessage="Postal code is not in valid format" ControlToValidate="txtCustPostal" CssClass="validator" Display="Dynamic" ValidationExpression="^[A-Z]\d[A-Z]\s?\d[A-Z]\d$"></asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegCustPostal" runat="server" ErrorMessage="Postal code is not in valid format" ControlToValidate="txtCustPostal" CssClass="validator" Display="Dynamic" ValidationExpression="^[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
