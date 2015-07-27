@@ -10,9 +10,13 @@ using System.Threading.Tasks;
     {
         public static SqlConnection GetConnection()
         {
-            string connectionString =
-                "Data Source=localhost\\SqlExpress;Initial Catalog=TravelExperts;" +
-                "Integrated Security=True";
+            string connectionString = "Data Source=localhost\\SqlExpress;Initial Catalog=TravelExperts;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+            return connection;
+        }
+        public static SqlConnection GetInitConn()
+        {
+            string connectionString = "Data Source=localhost\\SqlExpress;Integrated Security=True";
             SqlConnection connection = new SqlConnection(connectionString);
             return connection;
         }
